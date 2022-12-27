@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <title>WebGL/Three.js: Particles</title>
+ <style>
+ body {
+    margin: 0px;
+    background-color: #000;
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+ }
+
+ canvas
+  {
+    position: absolute;
+    top:0;
+    z-index: -1;
+    animation: fadeIn 2s linear forwards;
+  }
+
+  @keyframes fadeIn
+  {
+    0%
+    {
+      opacity: 0;
+    }
+
+    100%
+    {
+      opacity: 1;
+    }  
+  }
+
+</style>
+ </head>
+  
+    <body>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+     <script src="./newParticle.js"></script>
+
+    </body>
+</html>
